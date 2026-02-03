@@ -70,15 +70,6 @@
     
 //     name.value=""
 // })
-function  print(num){
-    setInterval(() => {
-        console.log("inside print")
-        num()
-    },2000 );
-    
+// me.value=""
+// })
 
-}
-function callback(){
-    console.log("inside callback")
-}
-print(callback)
