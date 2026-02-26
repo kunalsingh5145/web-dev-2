@@ -1,156 +1,198 @@
-// // // // // // // // const para=document.querySelector("p")
-// // // // // // // // para.innerText="Hello Shubham"
-// // // // // // // // para.style.backgroundColor="Black"
-// // // // // // // // para.style.color="White"
+// // // // // // // // // const para=document.querySelector("p")
+// // // // // // // // // para.innerText="Hello Shubham"
+// // // // // // // // // para.style.backgroundColor="Black"
+// // // // // // // // // para.style.color="White"
 
-// // // // // // // // Selecting elements by class name
+// // // // // // // // // Selecting elements by class name
 
-// // // // // // // // const paras=document.getElementsByClassName("para")
-// // // // // // // // paras[0].innerText="Hello!"
-// // // // // // // // paras[0].innerHTML="<h1 style='color:red; background-color:Thistle;'>WOOWWWW</h1>"
-// // // // // // // // paras[1].style.color='Blue'
-// // // // // // // // Returns an array of elements if there are multiple.
+// // // // // // // // // const paras=document.getElementsByClassName("para")
+// // // // // // // // // paras[0].innerText="Hello!"
+// // // // // // // // // paras[0].innerHTML="<h1 style='color:red; background-color:Thistle;'>WOOWWWW</h1>"
+// // // // // // // // // paras[1].style.color='Blue'
+// // // // // // // // // Returns an array of elements if there are multiple.
 
-// // // // // // // // Selecting elements by id
+// // // // // // // // // Selecting elements by id
 
-// // // // // // // // const para=document.getElementById("heading")
-// // // // // // // // para.innerText="MAIN SHUBHAM HUN"
-// // // // // // // // para.innerHTML="<p id='heading' style='color:Blue;background-color:Thistle;'>MAIN SHUBHAM HUN</p> " 
-
-
-// // // // // // // // Returns a new array
-// // // // // // // // let arr=[1, 2, 3, 4, 5, 6 ,7]
-// // // // // // // // const newarr=arr.map((arr)=>2*arr)
-// // // // // // // // console.log(newarr)    OUTPUT=> Array(7) [ 2, 4, 6, 8, 10, 12, 14 ]
+// // // // // // // // // const para=document.getElementById("heading")
+// // // // // // // // // para.innerText="MAIN SHUBHAM HUN"
+// // // // // // // // // para.innerHTML="<p id='heading' style='color:Blue;background-color:Thistle;'>MAIN SHUBHAM HUN</p> " 
 
 
-// // // // // // // // Doesn't return a new array
-// // // // // // // // let arr=[1,2,3,4,5,6,7]
-// // // // // // // // arr.forEach((ele)=>console.log(arr+=2))
-
-// // // // // // // // Difference in .textContent and .innerText
-
-// // // // // // // // .textContent applies changes to the hidden elements also (display:none or visibility:hidden).
-// // // // // // // // .innerText doesn't apply changes to hidden elements.
-
-// // // // // // // // const container=document.querySelector(".container")
-// // // // // // // // const button=document.querySelector("button")
-// // // // // // // // container.addEventListener("click",()=>{
-// // // // // // // //     console.log("Container clicked")
-// // // // // // // // })
-
-// // // // // // // // button.addEventListener("click",()=>{
-// // // // // // // //     console.log("Button clicked")
-// // // // // // // // })
-
-// // // // // // // // console.log(a) ERROR: ReferenceError: Cannot access 'a' before initialization
-// // // // // // // // console.log(b) Undefined
-
-// // // // // // // // let a = 239
-// // // // // // // // var b = 2595
-
-// // // // // // // // function hello(){
-// // // // // // // //     console.log("Hello World")
-// // // // // // // // }
-
-// // // // // // // // hello()
+// // // // // // // // // Returns a new array
+// // // // // // // // // let arr=[1, 2, 3, 4, 5, 6 ,7]
+// // // // // // // // // const newarr=arr.map((arr)=>2*arr)
+// // // // // // // // // console.log(newarr)    OUTPUT=> Array(7) [ 2, 4, 6, 8, 10, 12, 14 ]
 
 
+// // // // // // // // // Doesn't return a new array
+// // // // // // // // // let arr=[1,2,3,4,5,6,7]
+// // // // // // // // // arr.forEach((ele)=>console.log(arr+=2))
 
-// // // // // // // // function first() {
-// // // // // // // //     second()
-// // // // // // // // }
-// // // // // // // // function second() {
-// // // // // // // //     third()
-// // // // // // // // }
-// // // // // // // // function third() {
-// // // // // // // //     console.trace()
-// // // // // // // // }
-// // // // // // // // first()
+// // // // // // // // // Difference in .textContent and .innerText
 
-// // // // // // // // let val=40
+// // // // // // // // // .textContent applies changes to the hidden elements also (display:none or visibility:hidden).
+// // // // // // // // // .innerText doesn't apply changes to hidden elements.
 
-// // // // // // // // function calc(){
-// // // // // // // //     console.log(val)
-// // // // // // // //     let val=100
-// // // // // // // // }
+// // // // // // // // // const container=document.querySelector(".container")
+// // // // // // // // // const button=document.querySelector("button")
+// // // // // // // // // container.addEventListener("click",()=>{
+// // // // // // // // //     console.log("Container clicked")
+// // // // // // // // // })
 
-// // // // // // // // calc()
+// // // // // // // // // button.addEventListener("click",()=>{
+// // // // // // // // //     console.log("Button clicked")
+// // // // // // // // // })
 
+// // // // // // // // // console.log(a) ERROR: ReferenceError: Cannot access 'a' before initialization
+// // // // // // // // // console.log(b) Undefined
+
+// // // // // // // // // let a = 239
+// // // // // // // // // var b = 2595
+
+// // // // // // // // // function hello(){
+// // // // // // // // //     console.log("Hello World")
+// // // // // // // // // }
+
+// // // // // // // // // hello()
+
+
+
+// // // // // // // // // function first() {
+// // // // // // // // //     second()
+// // // // // // // // // }
+// // // // // // // // // function second() {
+// // // // // // // // //     third()
+// // // // // // // // // }
+// // // // // // // // // function third() {
+// // // // // // // // //     console.trace()
+// // // // // // // // // }
+// // // // // // // // // first()
+
+// // // // // // // // // let val=40
+
+// // // // // // // // // function calc(){
+// // // // // // // // //     console.log(val)
+// // // // // // // // //     let val=100
+// // // // // // // // // }
+
+// // // // // // // // // calc()
+
+// // // // // // // // // setTimeout(() => {
+// // // // // // // // //     alert("hello")
+// // // // // // // // // }, 2* 1000);
+// // // // // // // // // let num = 1;
+
+// // // // // // // // // const interval = setInterval(() => {
+// // // // // // // // //   console.log(num);
+// // // // // // // // //   num++;
+
+// // // // // // // // //   if (num > 10) {
+// // // // // // // // //     clearInterval(interval); 
+// // // // // // // // //   }
+// // // // // // // // // }, 1000);
+// // // // // // // // // const name = document.querySelector("#name")
+// // // // // // // // // const btn=document.querySelector(".btn")
+// // // // // // // // // const list=document.querySelector(".list")
+// // // // // // // // // btn.addEventListener("click",()=>{
+// // // // // // // // //   constli=document.createElement('li')
+// // // // // // // // //   list.innerText=name.value;
+// // // // // // // // //   list.appendChild(li)
+// // // // // // // // //   name.value=""
+// // // // // // // // // })
+// // // // // // // // // const name = document.querySelector("#name")
+// // // // // // // // // const btn=document.querySelector(".btn")
+// // // // // // // // // const list=document.querySelector(".list")
+// // // // // // // // // btn.addEventListener("click",()=>{ 
+// // // // // // // // //     if()
+// // // // // // // // // constli=document.createElement('li')
+// // // // // // // // // dlt.addEventListener("click",()={
+// // // // // // // // // list.removeChild(li)
+// // // // // // // // // })
+// // // // // // // // // li.appendChild(dlt)
+// // // // // // // // // list.appendChild(li)
+// // // // // // // // // name.value=""
+// // // // // // // // // }not complete fully !!!!
+// // // // // // // // //  function print(num){
+// // // // // // // // //     console.log("inside no",num)
+// // // // // // // // //  }
+// // // // // // // // //  print(333)
+// // // // // // // // //  function print(num){
+// // // // // // // // //     setTimeout(()=>{
+// // // // // // // // //         console.log("inside no")
+// // // // // // // // //         num()
+// // // // // // // // //  },3000)
+// // // // // // // // // }
+
+// // // // // // // // // function sample(){//call backfn
+// // // // // // // // //     comsole.log("inside callback")
+
+// // // // // // // // // }
+// // // // // // // // // print(sample)g
+// // // // // // // // console.log ("starting  homework")
 // // // // // // // // setTimeout(() => {
-// // // // // // // //     alert("hello")
-// // // // // // // // }, 2* 1000);
-// // // // // // // // let num = 1;
-
-// // // // // // // // const interval = setInterval(() => {
-// // // // // // // //   console.log(num);
-// // // // // // // //   num++;
-
-// // // // // // // //   if (num > 10) {
-// // // // // // // //     clearInterval(interval); 
-// // // // // // // //   }
-// // // // // // // // }, 1000);
-// // // // // // // // const name = document.querySelector("#name")
-// // // // // // // // const btn=document.querySelector(".btn")
-// // // // // // // // const list=document.querySelector(".list")
-// // // // // // // // btn.addEventListener("click",()=>{
-// // // // // // // //   constli=document.createElement('li')
-// // // // // // // //   list.innerText=name.value;
-// // // // // // // //   list.appendChild(li)
-// // // // // // // //   name.value=""
-// // // // // // // // })
-// // // // // // // // const name = document.querySelector("#name")
-// // // // // // // // const btn=document.querySelector(".btn")
-// // // // // // // // const list=document.querySelector(".list")
-// // // // // // // // btn.addEventListener("click",()=>{ 
-// // // // // // // //     if()
-// // // // // // // // constli=document.createElement('li')
-// // // // // // // // dlt.addEventListener("click",()={
-// // // // // // // // list.removeChild(li)
-// // // // // // // // })
-// // // // // // // // li.appendChild(dlt)
-// // // // // // // // list.appendChild(li)
-// // // // // // // // name.value=""
-// // // // // // // // }not complete fully !!!!
-// // // // // // // //  function print(num){
-// // // // // // // //     console.log("inside no",num)
-// // // // // // // //  }
-// // // // // // // //  print(333)
-// // // // // // // //  function print(num){
-// // // // // // // //     setTimeout(()=>{
-// // // // // // // //         console.log("inside no")
-// // // // // // // //         num()
-// // // // // // // //  },3000)
-// // // // // // // // }
-
-// // // // // // // // function sample(){//call backfn
-// // // // // // // //     comsole.log("inside callback")
-
-// // // // // // // // }
-// // // // // // // // print(sample)g
-// // // // // // // console.log ("starting  homework")
-// // // // // // // setTimeout(() => {
     
-// // // // // // // console.log("home workdone");
-// // // // // // // console.log("starting dinner");
-// // // // // // //   setTimeout(() => {
-// // // // // // //     console.log(" dinner done");
-// // // // // // //     console.log("getting ready to go out");
-// // // // // // //   setTimeout(() => {
-// // // // // // //     console.log(" going to play ground")
+// // // // // // // // console.log("home workdone");
+// // // // // // // // console.log("starting dinner");
+// // // // // // // //   setTimeout(() => {
+// // // // // // // //     console.log(" dinner done");
+// // // // // // // //     console.log("getting ready to go out");
+// // // // // // // //   setTimeout(() => {
+// // // // // // // //     console.log(" going to play ground")
     
     
-// // // // // // //   }, 1000);
+// // // // // // // //   }, 1000);
 
-// // // // // // //   }, 2500);
-// // // // // // // }, 2000);
-// // // // // //  function finishhomework(callback){|
-// // // // // //     console.log ("starting homework")
-// // // // // //     setTimeout(() => { 
-// // // // // //         console.log("homework done")
+// // // // // // // //   }, 2500);
+// // // // // // // // }, 2000);
+// // // // // // //  function finishhomework(callback){|
+// // // // // // //     console.log ("starting homework")
+// // // // // // //     setTimeout(() => { 
+// // // // // // //         console.log("homework done")
         
-// // // // // //     }, timeout);
-// // // // // //  }
+// // // // // // //     }, timeout);
+// // // // // // //  }
+// // // // // // function dohomework(){
+// // // // // // const p = new  promise (( resolve ,reject )=> {
+// // // // // //     setTimeout(() => {
+
+// // // // // //         if (done) {
+// // // // // //             console.log(" work completed")
+// // // // // //             resolve ("homework is done")
+// // // // // //         }else{
+// // // // // //             reject ("work is not completed")
+// // // // // //         }
+// // // // // //     }, 5000);
+// // // // // // }) 
+// // // // // //  return p 
+// // // // // // }
+// // // // // // p.then ((data) =>{
+// // // // // //     console.log (data .name)
+// // // // // // }) .catch ((err)=>{
+// // // // // //     console.log(err)
+// // // // // // }).finally (()=>{
+// // // // // //      console.log("finally back")
+// // // // // //  } )
+// // // // // // const p = new  promise (( resolve ,reject )=> {
+// // // // // //     setTimeout(() => {
+
+// // // // // //         if (done) {
+// // // // // //             resolve ("go  to play ground")
+// // // // // //         }else{
+// // // // // //             reject ("not to go to play ground")
+// // // // // //         }
+// // // // // //     }, 5000);
+// // // // // // })
+// // // // // // p.then ((data) =>{
+// // // // // //     console.log (data .name)
+// // // // // //     return("eat dinner")
+
+
+// // // // // // }) .catch ((err)=>{
+// // // // // //     console.log(err)
+
+// // // // // // }).finally (()=>
+// // // // // //      console.log("finally back")
+// // // // // // )
 // // // // // function dohomework(){
 // // // // // const p = new  promise (( resolve ,reject )=> {
 // // // // //     setTimeout(() => {
@@ -165,170 +207,207 @@
 // // // // // }) 
 // // // // //  return p 
 // // // // // }
-// // // // // p.then ((data) =>{
-// // // // //     console.log (data .name)
-// // // // // }) .catch ((err)=>{
-// // // // //     console.log(err)
-// // // // // }).finally (()=>{
-// // // // //      console.log("finally back")
-// // // // //  } )
+// // // // // function eatdinner(){
 // // // // // const p = new  promise (( resolve ,reject )=> {
+// // // // //     let done = false;
 // // // // //     setTimeout(() => {
 
 // // // // //         if (done) {
-// // // // //             resolve ("go  to play ground")
+// // // // //             console.log(" dinner compled")
+// // // // //             resolve ("dinner is done")
 // // // // //         }else{
-// // // // //             reject ("not to go to play ground")
+// // // // //             reject ("dinner is not done")
 // // // // //         }
-// // // // //     }, 5000);
+// // // // //     }, 2000);
+// // // // // }) 
+// // // // //  return p 
+// // // // // }
+// // // // // function gotoplayground(){
+// // // // // const p = new  promise (( resolve ,reject )=> {
+// // // // //     let done= true;
+
+// // // // //     setTimeout(() => {
+
+// // // // //         if (done) {
+// // // // //             console.log(" went to playground")
+// // // // //             resolve ("playground time")
+// // // // //         }else{
+// // // // //             reject ("not allowed to go")
+// // // // //         }
+// // // // //     }, 2000);
 // // // // // })
-// // // // // p.then ((data) =>{
-// // // // //     console.log (data .name)
-// // // // //     return("eat dinner")
-
-
-// // // // // }) .catch ((err)=>{
+// // // // //  return p 
+// // // // // }
+// // // // // dohomework().then((data)=>{
+// // // // //     console.log (data)
+// // // // //     return eatdinner()
+// // // // // }).then((data)=>{
+// // // // //     console.log(data)
+// // // // //     return(playground)
+// // // // // }).then((data)=>{
+// // // // //     console.log(data)
+// // // // // }).catch((err)=>{  
 // // // // //     console.log(err)
-
-// // // // // }).finally (()=>
-// // // // //      console.log("finally back")
-// // // // // )
-// // // // function dohomework(){
-// // // // const p = new  promise (( resolve ,reject )=> {
-// // // //     setTimeout(() => {
-
-// // // //         if (done) {
-// // // //             console.log(" work completed")
-// // // //             resolve ("homework is done")
-// // // //         }else{
-// // // //             reject ("work is not completed")
-// // // //         }
-// // // //     }, 5000);
-// // // // }) 
-// // // //  return p 
+// // // // // }).finally(()=>{
+// // // // //     console.log("go to sleep")
+// // // // // })
+// // // // function orderFood(){
+// // // //     return new Promise((res,rej)=>{
+// // // //         setTimeout(() => {
+// // // //             console.log("food ordered")
+// // // //             res()
+// // // //         }, 2000)
+// // // //     })
 // // // // }
-// // // // function eatdinner(){
-// // // // const p = new  promise (( resolve ,reject )=> {
-// // // //     let done = false;
-// // // //     setTimeout(() => {
-
-// // // //         if (done) {
-// // // //             console.log(" dinner compled")
-// // // //             resolve ("dinner is done")
-// // // //         }else{
-// // // //             reject ("dinner is not done")
-// // // //         }
-// // // //     }, 2000);
-// // // // }) 
-// // // //  return p 
+// // // // function foodprepared(){
+// // // //     return new Promise((res,rej)=>{
+// // // //         setTimeout(() => {
+// // // //             console.log("food perpared")
+// // // //             res()
+// // // //         }, 2000
+// // // //     })
 // // // // }
-// // // // function gotoplayground(){
-// // // // const p = new  promise (( resolve ,reject )=> {
-// // // //     let done= true;
 
-// // // //     setTimeout(() => {
-
-// // // //         if (done) {
-// // // //             console.log(" went to playground")
-// // // //             resolve ("playground time")
-// // // //         }else{
-// // // //             reject ("not allowed to go")
-// // // //         }
-// // // //     }, 2000);
-// // // // })
-// // // //  return p 
+// // // // function deliverFood(){
+// // // //     return new Promise((res,rej)=>{
+// // // //         setTimeout(() => {
+// // // //             console.log("Food diliver")
+// // // //             res()
+// // // //         }, 2000)
+// // // //     })
 // // // // }
-// // // // dohomework().then((data)=>{
-// // // //     console.log (data)
-// // // //     return eatdinner()
-// // // // }).then((data)=>{
-// // // //     console.log(data)
-// // // //     return(playground)
-// // // // }).then((data)=>{
-// // // //     console.log(data)
-// // // // }).catch((err)=>{  
-// // // //     console.log(err)
-// // // // }).finally(()=>{
-// // // //     console.log("go to sleep")
-// // // // })
+// // // // async function foodorder(){
+// // // //     await orderFood()
+// // // //     await foodprepared()
+// // // //     await deliverFood()
+// // // // }
+
+// // // // foodorder()
 // // // function orderFood(){
 // // //     return new Promise((res,rej)=>{
-// // //         setTimeout(() => {
-// // //             console.log("food ordered")
+// // //         setTimeout(()=>{
+// // //             console.log("Food ordered")
 // // //             res()
-// // //         }, 2000)
+// // //         },2000)
 // // //     })
 // // // }
-// // // function foodprepared(){
-// // //     return new Promise((res,rej)=>{
-// // //         setTimeout(() => {
-// // //             console.log("food perpared")
+
+// // // function prepareFood(){
+// // //     return new Promise((res,rej)="">{
+// // //         setTimeout(()=>{
+// // //             console.log("Food pepared")
 // // //             res()
-// // //         }, 2000
+// // //         },2000)
 // // //     })
 // // // }
 
 // // // function deliverFood(){
 // // //     return new Promise((res,rej)=>{
-// // //         setTimeout(() => {
-// // //             console.log("Food diliver")
+// // //         setTimeout(()=>{
+// // //             console.log("Food delivered")
 // // //             res()
-// // //         }, 2000)
+// // //         },2000)
 // // //     })
 // // // }
-// // // async function foodorder(){
+
+// // // async function foodOrder(){
 // // //     await orderFood()
-// // //     await foodprepared()
+// // //     await prepareFood()
 // // //     await deliverFood()
 // // // }
 
-// // // foodorder()
-// // function orderFood(){
-// //     return new Promise((res,rej)=>{
-// //         setTimeout(()=>{
-// //             console.log("Food ordered")
-// //             res()
-// //         },2000)
-// //     })
-// // }
-
-// // function prepareFood(){
-// //     return new Promise((res,rej)="">{
-// //         setTimeout(()=>{
-// //             console.log("Food pepared")
-// //             res()
-// //         },2000)
-// //     })
-// // }
-
-// // function deliverFood(){
-// //     return new Promise((res,rej)=>{
-// //         setTimeout(()=>{
-// //             console.log("Food delivered")
-// //             res()
-// //         },2000)
-// //     })
-// // }
-
-// // async function foodOrder(){
-// //     await orderFood()
-// //     await prepareFood()
-// //     await deliverFood()
-// // }
-
-// // foodOrder()
-// console.log("first line")
-// try{
-//     let age= 16
-//     if (age<18){
-//         console.log("you are minor")
-//         throw new Error("you are minor")
-//       }
+// // // foodOrder()
+// // console.log("first line")
+// // try{
+// //     let age= 16
+// //     if (age<18){
+// //         console.log("you are minor")
+// //         throw new Error("you are minor")
+// //       }
     
-//     }
-//     catch (e)
-//     console.log(EventCounts
-//           `
-//     )
+// //     }
+// //     catch (e)
+// //     console.log(EventCounts
+// //           `
+// //     )
+// // const API_KEY = ""
+// // const form= document.querySelector("#form")
 
-                   
+// // form .addEventListener('submit', async function (event){
+// //       event.preventdefault()
+// //       const searchCity=city.value
+// //       console.log(searchcity)
+
+// //       conxt res= awa
+
+// // }
+// // // )
+// //       form.addEventListener("submit", async function(event) {
+// //     event.preventDefault();
+
+// //     const city = city.value;
+// //     console.log(searchCity);
+
+// //     const response = await fetch(
+// //         `https://api.openweathermap.org/data/2.5/weather?q=${searchCity}&appid=273`
+// //     );
+// //     const data = await response.json();
+
+// //     weatherDetail.innerHTML = `
+// //         <p>City: ${data.name}</p>
+// //         <p>Temp: ${(data.main.temp - 273).toFixed()}°C</p>
+// //         <p>Weather: ${data.weather[0].main}</p>
+// //         <p>humidity: ${data.main.humidity}</p>
+// //         <p>Wind: ${data.wind.speed}m/s</p>
+// // //     `;
+// // });   
+//  form.addEventListener("submit", async function(event) {   
+//     // if (searchCity){
+//     //     try{
+//     //          const response = await fetch(
+//     //     `https://api.openweathermap.org/data/2.5/weather?q=${searchCity}&appid=273`
+//     // );
+//     // const data = await response.json();
+
+//     // weatherDetail.innerHTML = `
+//     //     <p>City: ${data.name}</p>
+//     //     <p>Temp: ${(data.main.temp - 273).toFixed()}°C</p>
+//     //     <p>Weather: ${data.weather[0].main}</p>
+//     //     <p>humidity: ${data.main.humidity}</p>
+//     //     <p>Wind: ${data.wind.speed}m/s</p>`
+//     //     }else{
+//     //         weatherDetials.innerHTML='<p>city not found</p>'
+
+//     //     }
+     
+//     //     }
+//     // } 
+const API_KEY="261a39408a11651218ce70de7bfc8b54"
+const weatherDetail=document.querySelector("#form")
+
+form.addEventListener('submit',async function(event){
+    event.preventDefault()
+    const searchCity=city.value
+    console.log(searchCity)
+
+   if(searchCity){
+    try{
+         const res= await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${searchCity}ppid=${API_KEY}`)
+         const data=await res.json()
+         if(data.cod===200){
+            weatherDetail.innerHTML=`
+            <p> City:${data.name}</p>
+            <p>Temp:${(data.main.temp-273).toFixed(1)}C</p>
+            <p>Weather:${data.weather[0].main}</p>
+            <p>Humidity:${data.main.humidity}
+            <p>Wind Speed:${data.wind.speed}m/s</p>`
+            cityHistory.push(searchcity)
+            localStorage.setItem("cityHistory",json.stringity(cityhistory))
+         }else{
+            weatherDetail.innerHTML=`<p>City not found</p>`
+         }
+    }catch(e){
+        console.log(e)
+    }
+   }
+})      
